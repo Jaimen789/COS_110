@@ -1,0 +1,76 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+int getRows() 
+{
+	ifstream infile;
+	string sline;
+
+	int rows = 0;
+    infile.open("data.txt"); 
+
+    while(infile >> sline)
+    {
+        rows++;        
+    } 
+
+    infile.close();
+
+    return rows;
+}
+
+
+int main(){
+
+    int rows = getRows();
+    int cols = 0;
+
+    int * numbers = new int[rows];
+    string **array = new string*[rows];
+
+    string line;
+    
+    int rowCount = 0;
+    int colCount = 0;
+    
+    ifstream infile;
+
+    string result;
+
+    infile.open("data.txt");
+
+    while(getline(infile, line)){
+            if(line != ""){
+                colCount = 0;
+
+                cout << "1234" << endl;
+
+                line = line + ',';
+
+                cout << "line" << line;
+
+                for(int i = 0; i < line.length(); i++){
+                    if(line[i] != ','){
+                        temp += line[i];
+                    }else{
+                        //at a comman and we need to store
+                        array[rowCount][colCount] = temp;
+                        temp = "";
+                        colCount++;
+
+                    }
+                }
+            }
+            rowCount++;
+        }
+
+
+    infile.close();
+
+
+    return 0;
+}

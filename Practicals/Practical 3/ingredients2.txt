@@ -1,0 +1,3 @@
+giant toe,0
+frog legs,4
+dragon tooth,10

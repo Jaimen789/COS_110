@@ -1,0 +1,4 @@
+unicorn horn,8
+mandrake root,5
+phoenix feather,12
+basilisk scale,9

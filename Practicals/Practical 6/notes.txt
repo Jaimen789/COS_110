@@ -1,0 +1,4 @@
+polymorphism: you can have multiple objects that inherit from the same base class 
+            -> can have methods with the same name but different implementation.
+
+Exceptions:

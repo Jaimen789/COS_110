@@ -1,0 +1,3 @@
+pig skin,1
+frog legs,4
+dragon tooth,10

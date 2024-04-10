@@ -1,0 +1,6 @@
+virtual function: gives the ability of runtime polymorphism(executes the most derived version of the function).
+pure virtual function: make sure every class that inherits from you executes their own version of the function.
+
+Abstract Class: contains atleast one pure virtual function.
+
+You can assign a pointer of base class to derived class.
